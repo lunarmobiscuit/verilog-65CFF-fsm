@@ -1,5 +1,5 @@
 # verilog-65C2FF-fsm
-A verilog model of the mythical 65CFF CPU, a 65C02 with fewer capabilties.  Here the FF is the two's compliment of 02, thus making this a play on the 65-2 (65 minus 2).
+A verilog model of the mythical 65CFF CPU, a 65C02 with fewer capabilties.  Here the FF is the two's compliment of 1, thus making this a play on the 65-1 (65 minus 1).
 
 ## Design goals
 The main design was inspired by the 6507, the CPU in the Atari 2600 that had only 13-bits of address bus (8K), and no interrupts.  What else can you take away from a 6502 and still have a useful chip?
