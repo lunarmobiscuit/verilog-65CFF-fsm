@@ -1,0 +1,1778 @@
+DESIGN TIME PRECISION: 10e0
+PACKAGES:
+SCOPES:
+cpu module <cpu> instance 3 children, 0 classes
+    timescale = 10e0 / 10e0
+    parameter <no_type> ABS0 = 5'd6;
+    parameter <no_type> ABS1 = 5'd7;
+    parameter <no_type> ABW0 = 5'd28;
+    parameter <no_type> ABW1 = 5'd29;
+    parameter <no_type> AB_ABSX = 10'd658;
+    parameter <no_type> AB_BACK = 10'd812;
+    parameter <no_type> AB_FWRD = 10'd556;
+    parameter <no_type> AB_HOLD = 10'd536;
+    parameter <no_type> AB_IRQV = 10'd352;
+    parameter <no_type> AB_JMP0 = 10'd562;
+    parameter <no_type> AB_JMP1 = 10'd561;
+    parameter <no_type> AB_NEXT = 10'd537;
+    parameter <no_type> AB_NMIV = 10'd320;
+    parameter <no_type> AB_OPER = 10'd40;
+    parameter <no_type> AB_PULL = 10'd257;
+    parameter <no_type> AB_PUSH = 10'd256;
+    parameter <no_type> AB_ZPGX = 10'd134;
+    parameter <no_type> ALU_ADC = 9'd6;
+    parameter <no_type> ALU_AND = 9'd80;
+    parameter <no_type> ALU_ASLA = 9'd256;
+    parameter <no_type> ALU_ASLM = 9'd272;
+    parameter <no_type> ALU_CMP = 9'd13;
+    parameter <no_type> ALU_DECA = 9'd8;
+    parameter <no_type> ALU_DECM = 9'd24;
+    parameter <no_type> ALU_EOR = 9'd96;
+    parameter <no_type> ALU_INCA = 9'd1;
+    parameter <no_type> ALU_INCM = 9'd17;
+    parameter <no_type> ALU_LDA = 9'd16;
+    parameter <no_type> ALU_LSRA = 9'd384;
+    parameter <no_type> ALU_LSRM = 9'd400;
+    parameter <no_type> ALU_ORA = 9'd64;
+    parameter <no_type> ALU_PLA = 9'b01xxxxxxx;
+    parameter <no_type> ALU_REG = 9'd0;
+    parameter <no_type> ALU_ROLA = 9'd259;
+    parameter <no_type> ALU_ROLM = 9'd275;
+    parameter <no_type> ALU_RORA = 9'd387;
+    parameter <no_type> ALU_RORM = 9'd403;
+    parameter <no_type> ALU_SBC = 9'd14;
+    parameter <no_type> ALU_TSX = 9'd112;
+    parameter <no_type> ALU_____ = 9'bxxxxxxxxx;
+    parameter <no_type> BRA0 = 5'd8;
+    parameter <no_type> BRK0 = 5'd20;
+    parameter <no_type> BRK1 = 5'd21;
+    parameter <no_type> BRK2 = 5'd22;
+    parameter <no_type> BRK3 = 5'd23;
+    parameter <no_type> DATA = 5'd5;
+    parameter <no_type> DO_ALU = 2'd0;
+    parameter <no_type> DO_PCH = 2'd2;
+    parameter <no_type> DO_PCL = 2'd1;
+    parameter <no_type> DO_PHP = 2'd3;
+    parameter <no_type> DO____ = 2'bxx;
+    parameter <no_type> DR_DI = 1'd1;
+    parameter <no_type> DR___ = 1'd0;
+    parameter <no_type> DST_A = 2'd3;
+    parameter <no_type> DST_X = 2'd1;
+    parameter <no_type> DST_Y = 2'd2;
+    parameter <no_type> DST__ = 2'bxx;
+    parameter <no_type> FLAG_ADD = 2'd1;
+    parameter <no_type> FLAG_BIT = 2'd3;
+    parameter <no_type> FLAG_CMP = 2'd2;
+    parameter <no_type> FLAG____ = 2'd0;
+    parameter <no_type> IDX0 = 5'd17;
+    parameter <no_type> IDX1 = 5'd18;
+    parameter <no_type> IDX2 = 5'd19;
+    parameter <no_type> IDX_XY = 2'd3;
+    parameter <no_type> IDX_X_ = 2'd1;
+    parameter <no_type> IDX__Y = 2'd2;
+    parameter <no_type> IDX___ = 2'd0;
+    parameter <no_type> IMM0 = 5'd1;
+    parameter <no_type> IND0 = 5'd25;
+    parameter <no_type> IND1 = 5'd26;
+    parameter <no_type> IX = <SEL_X=2'd1, wid=2>;
+    parameter <no_type> IY = <SEL_Y=2'd2, wid=2>;
+    parameter <no_type> IZ = <SEL_Z=2'd0, wid=2>;
+    parameter <no_type> JMP0 = 5'd15;
+    parameter <no_type> JMP1 = 5'd16;
+    parameter <no_type> JSR0 = 5'd9;
+    parameter <no_type> JSR1 = 5'd10;
+    parameter <no_type> JSR2 = 5'd11;
+    parameter <no_type> LDA = 2'd1;
+    parameter <no_type> NOP = 2'd0;
+    parameter <no_type> PHA0 = 5'd2;
+    parameter <no_type> PLA0 = 5'd3;
+    parameter <no_type> RMW = 2'd3;
+    parameter <no_type> RMW0 = 5'd30;
+    parameter <no_type> RMW1 = 5'd31;
+    parameter <no_type> RTI0 = 5'd24;
+    parameter <no_type> RTS0 = 5'd12;
+    parameter <no_type> RTS1 = 5'd13;
+    parameter <no_type> RTS2 = 5'd14;
+    parameter <no_type> SEL_A = 2'd3;
+    parameter <no_type> SEL_X = 2'd1;
+    parameter <no_type> SEL_Y = 2'd2;
+    parameter <no_type> SEL_Z = 2'd0;
+    parameter <no_type> SRC_A = 2'd3;
+    parameter <no_type> SRC_X = 2'd1;
+    parameter <no_type> SRC_Y = 2'd2;
+    parameter <no_type> SRC_Z = 2'd0;
+    parameter <no_type> SRC__ = 2'bxx;
+    parameter <no_type> STA = 2'd2;
+    parameter <no_type> SYNC = 5'd0;
+    parameter <no_type> S_DEC = 2'd2;
+    parameter <no_type> S_INC = 2'd1;
+    parameter <no_type> S____ = 2'd0;
+    parameter <no_type> WE_1_ = 2'd1;
+    parameter <no_type> WE_ST = 2'd2;
+    parameter <no_type> WE___ = 2'd0;
+    parameter <no_type> ZPG0 = 5'd4;
+    parameter <no_type> ZPW0 = 5'd27;
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_102; nprobe=1 scope=cpu // cpu.v:461
+    event _ivl_98; nprobe=1 scope=cpu // cpu.v:383
+    event _ivl_94; nprobe=1 scope=cpu // cpu.v:309
+    event _ivl_78; nprobe=1 scope=cpu // cpu.v:176
+    wire: AB unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[13:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=14 pin_count=1
+        [0]: 0x6000016a1c00 cpu.AB
+    wire: B unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0aa0 cpu.B
+    reg: C unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1fe0 cpu.C
+    reg: D unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0c00 cpu.D
+    wire: DI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=17, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2140 cpu.DI
+    reg: DIHOLD unpacked dims=0 pin_count=1 netvector_t:logic unsigned[8:0] (eref=2, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=9 pin_count=1
+        [0]: 0x6000016a22c0 cpu.DIHOLD
+    reg: DO unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=0, lref=4) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1 pins_are_virtual
+    reg: DR unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=2, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2180 cpu.DR
+    reg: I unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0c20 cpu.I
+    wire: IR unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=14, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a22e0 cpu.IR
+    wire: IRQ unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    reg: N unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=4) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0dc0 cpu.N
+    wire: NMI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    wire: P unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a0b40 cpu.P
+    wire: PC unpacked dims=0 pin_count=1 netvector_t:logic unsigned[13:0] (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=14 pin_count=1
+        [0]: 0x6000016a20e0 cpu.PC
+    wire: R unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1f60 cpu.regfile.src
+    wire: RDY unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    wire: RST unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1b00 cpu.RST
+    wire: S unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2100 cpu.S
+    reg: V unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=5) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0de0 cpu.V
+    wire: WE unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a2040 cpu.WE
+    wire: XY unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2200 cpu.regfile.idx
+    reg: Z unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=3) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0ba0 cpu.Z
+    wire /*implicit*/: _ivl_12 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a0ae0 cpu._ivl_12
+    wire /*implicit*/: _ivl_16 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1660 cpu._ivl_16
+    wire /*implicit*/: _ivl_2 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0b60 cpu._ivl_2
+    wire /*implicit*/: _ivl_20 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a16a0 cpu._ivl_20
+    wire /*implicit*/: _ivl_44 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1ba0 cpu._ivl_44
+    wire /*implicit*/: _ivl_46 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1bc0 cpu._ivl_46
+    wire: _ivl_55 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1be0 cpu._ivl_55
+    wire: _ivl_57 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1c20 cpu._ivl_57
+    wire /*implicit*/: _ivl_6 unpacked dims=0 pin_count=1 (local) netvector_t:bool unsigned[4:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=5 pin_count=1
+        [0]: 0x6000016a0d60 cpu._ivl_6
+    wire: _ivl_61 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1a60 cpu._ivl_61
+    wire: _ivl_63 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1f80 cpu._ivl_63
+    wire /*implicit*/: _ivl_64 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a2060 cpu._ivl_64
+    wire: _ivl_69 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a22a0 cpu._ivl_69
+    wire: _ivl_71 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1fc0 cpu._ivl_71
+    wire: ab_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[9:0] (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=10 pin_count=1
+        [0]: 0x6000016a16e0 cpu.ab_op
+    wire: adc_sbc unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1640 cpu.adc_sbc
+    wire: alu_C unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e40 cpu.alu_C
+    wire: alu_N unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1d60 cpu.alu_N
+    wire: alu_V unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e60 cpu.alu_V
+    wire: alu_Z unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1d20 cpu.alu_Z
+    wire: alu_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[8:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=9 pin_count=1
+        [0]: 0x6000016a1ce0 cpu.alu_op
+    wire: alu_out unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1d40 cpu.regfile.dst
+    wire: bit_isn unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a16c0 cpu.bit_isn
+    reg: bus_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[18:0] (eref=6, lref=35) scope=cpu #(0x0,0x0,0x0) vector_width=19 pin_count=1
+        [0]: 0x6000016a1780 cpu.bus_op
+    reg: clc unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: cld unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: cli unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1fa0 cpu.clk
+    reg: clv unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: cmp unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1680 cpu.cmp
+    reg: cond unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=9) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a3220 cpu.cond
+    reg: cond_code unpacked dims=0 pin_count=1 netvector_t:logic unsigned[3:0] (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=4 pin_count=1
+        [0]: 0x6000016a25e0 cpu.cond_code
+    reg: control unpacked dims=0 pin_count=1 netvector_t:logic unsigned[18:0] (eref=4, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=19 pin_count=1
+        [0]: 0x6000016a15e0 cpu.control
+    reg: decode unpacked dims=0 pin_count=1 netvector_t:logic unsigned[23:0] (eref=2, lref=177) scope=cpu #(0x0,0x0,0x0) vector_width=24 pin_count=1
+        [0]: 0x6000016a2300 cpu.decode
+    wire: do_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a18c0 cpu.do_op
+    wire: dr_di unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1880 cpu.dr_di
+    wire: init_state unpacked dims=0 pin_count=1 netvector_t:logic unsigned[4:0] (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=5 pin_count=1
+        [0]: 0x6000016a2320 cpu.init_state
+    wire: ins_type unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=3, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1620 cpu.ins_type
+    wire: load unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1760 cpu.load
+    reg: php unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a23c0 cpu.php
+    reg: plp unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=5, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: pull unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1900 cpu.pull
+    wire: push unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1c80 cpu.push
+    reg: rti unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=6, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a3260 cpu.rti
+    reg: sec unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: sed unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    reg: sei unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1 pins_are_virtual
+    wire: shift unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a17c0 cpu.shift
+    reg: state unpacked dims=0 pin_count=1 netvector_t:logic unsigned[4:0] (eref=9, lref=33) scope=cpu #(0x0,0x0,0x0) vector_width=5 pin_count=1
+        [0]: 0x6000016a0b00 cpu.state
+    wire: store unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1720 cpu.store
+    wire: sync unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=1, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a0a80 cpu.sync
+    reg: txs unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=0, lref=1) scope=cpu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1c60 cpu.txs
+    wire: we_op unpacked dims=0 pin_count=1 netvector_t:logic unsigned[1:0] (eref=2, lref=0) scope=cpu #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1840 cpu.we_op
+cpu.ab module <ab> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_18; nprobe=1 scope=cpu.ab // ab.v:110
+    event _ivl_16; nprobe=1 scope=cpu.ab // ab.v:93
+    event _ivl_14; nprobe=1 scope=cpu.ab // ab.v:73
+    event _ivl_12; nprobe=1 scope=cpu.ab // ab.v:53
+    wire: AB unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[13:0] (eref=2, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=14 pin_count=1
+        [0]: 0x6000016a1c00 cpu.AB
+    reg: ABH unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a19c0 cpu.ab.ABH
+    reg: ABL unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a0bc0 cpu.ab.ABL
+    wire: DI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=3, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2140 cpu.DI
+    wire: DR unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2180 cpu.DR
+    reg: PC unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[13:0] (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=14 pin_count=1
+        [0]: 0x6000016a20e0 cpu.PC
+    wire: RST unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1b00 cpu.RST
+    wire: S unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2100 cpu.S
+    wire: XY unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=2, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2200 cpu.regfile.idx
+    wire /*implicit*/: _ivl_0 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[15:0] (eref=0, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=16 pin_count=1
+        [0]: 0x6000016a1940 cpu.ab._ivl_0
+    wire: _ivl_7 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1f40 cpu.ab._ivl_7
+    reg: ab_hold unpacked dims=0 pin_count=1 netvector_t:logic unsigned[13:0] (eref=1, lref=1) scope=cpu.ab #(0x0,0x0,0x0) vector_width=14 pin_count=1
+        [0]: 0x6000016a2120 cpu.ab.ab_hold
+    wire: ab_op unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[9:0] (eref=7, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=10 pin_count=1
+        [0]: 0x6000016a16e0 cpu.ab_op
+    wire: abh_ci unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=4, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1ec0 cpu.ab.abh_ci
+    wire: abl_ci unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=4, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e80 cpu.ab.abl_ci
+    reg: abl_co unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1f20 cpu.ab.abl_co
+    reg: base unpacked dims=0 pin_count=1 netvector_t:logic unsigned[13:0] (eref=7, lref=4) scope=cpu.ab #(0x0,0x0,0x0) vector_width=14 pin_count=1
+        [0]: 0x6000016a21c0 cpu.ab.base
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.ab #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1fa0 cpu.clk
+cpu.alu module <alu> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_18; nprobe=1 scope=cpu.alu // alu.v:33
+    wire: C unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=2, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1fe0 cpu.C
+    wire: DI unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2140 cpu.DI
+    wire: DR unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=6, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2180 cpu.DR
+    wire: R unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=4, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1f60 cpu.regfile.src
+    wire: S unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2100 cpu.S
+    wire: _ivl_11 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1de0 cpu.alu._ivl_11
+    wire /*implicit*/: _ivl_12 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e00 cpu.alu._ivl_12
+    wire /*implicit*/: _ivl_14 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e20 cpu.alu._ivl_14
+    wire: _ivl_9 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[0:0] (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1da0 cpu.alu._ivl_9
+    reg: alu_C unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=1, lref=3) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e40 cpu.alu_C
+    wire: alu_N unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1d60 cpu.alu_N
+    wire: alu_V unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1e60 cpu.alu_V
+    wire: alu_Z unpacked dims=0 pin_count=1 output netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1d20 cpu.alu_Z
+    reg: alu_ai unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=2, lref=6) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1d80 cpu.alu.alu_ai
+    reg: alu_bi unpacked dims=0 pin_count=1 netvector_t:logic unsigned[7:0] (eref=2, lref=4) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1dc0 cpu.alu.alu_bi
+    reg: alu_ci unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=4) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a2000 cpu.alu.alu_ci
+    wire: alu_op unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[8:0] (eref=6, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=9 pin_count=1
+        [0]: 0x6000016a1ce0 cpu.alu_op
+    reg: alu_out unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=4, lref=4) scope=cpu.alu #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1d40 cpu.regfile.dst
+    reg: alu_si unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=1) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a2020 cpu.alu.alu_si
+    wire: right unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=2, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1ca0 cpu.alu.right
+    wire: shift unpacked dims=0 pin_count=1 netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.alu #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1d00 cpu.alu.shift
+cpu.regfile module <regfile> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    parameter <no_type> ABS0 = 5'd6;
+    parameter <no_type> ABS1 = 5'd7;
+    parameter <no_type> ABW0 = 5'd28;
+    parameter <no_type> ABW1 = 5'd29;
+    parameter <no_type> AB_ABSX = 10'd658;
+    parameter <no_type> AB_BACK = 10'd812;
+    parameter <no_type> AB_FWRD = 10'd556;
+    parameter <no_type> AB_HOLD = 10'd536;
+    parameter <no_type> AB_IRQV = 10'd352;
+    parameter <no_type> AB_JMP0 = 10'd562;
+    parameter <no_type> AB_JMP1 = 10'd561;
+    parameter <no_type> AB_NEXT = 10'd537;
+    parameter <no_type> AB_NMIV = 10'd320;
+    parameter <no_type> AB_OPER = 10'd40;
+    parameter <no_type> AB_PULL = 10'd257;
+    parameter <no_type> AB_PUSH = 10'd256;
+    parameter <no_type> AB_ZPGX = 10'd134;
+    parameter <no_type> ALU_ADC = 9'd6;
+    parameter <no_type> ALU_AND = 9'd80;
+    parameter <no_type> ALU_ASLA = 9'd256;
+    parameter <no_type> ALU_ASLM = 9'd272;
+    parameter <no_type> ALU_CMP = 9'd13;
+    parameter <no_type> ALU_DECA = 9'd8;
+    parameter <no_type> ALU_DECM = 9'd24;
+    parameter <no_type> ALU_EOR = 9'd96;
+    parameter <no_type> ALU_INCA = 9'd1;
+    parameter <no_type> ALU_INCM = 9'd17;
+    parameter <no_type> ALU_LDA = 9'd16;
+    parameter <no_type> ALU_LSRA = 9'd384;
+    parameter <no_type> ALU_LSRM = 9'd400;
+    parameter <no_type> ALU_ORA = 9'd64;
+    parameter <no_type> ALU_PLA = 9'b01xxxxxxx;
+    parameter <no_type> ALU_REG = 9'd0;
+    parameter <no_type> ALU_ROLA = 9'd259;
+    parameter <no_type> ALU_ROLM = 9'd275;
+    parameter <no_type> ALU_RORA = 9'd387;
+    parameter <no_type> ALU_RORM = 9'd403;
+    parameter <no_type> ALU_SBC = 9'd14;
+    parameter <no_type> ALU_TSX = 9'd112;
+    parameter <no_type> ALU_____ = 9'bxxxxxxxxx;
+    parameter <no_type> BRA0 = 5'd8;
+    parameter <no_type> BRK0 = 5'd20;
+    parameter <no_type> BRK1 = 5'd21;
+    parameter <no_type> BRK2 = 5'd22;
+    parameter <no_type> BRK3 = 5'd23;
+    parameter <no_type> DATA = 5'd5;
+    parameter <no_type> DO_ALU = 2'd0;
+    parameter <no_type> DO_PCH = 2'd2;
+    parameter <no_type> DO_PCL = 2'd1;
+    parameter <no_type> DO_PHP = 2'd3;
+    parameter <no_type> DO____ = 2'bxx;
+    parameter <no_type> DR_DI = 1'd1;
+    parameter <no_type> DR___ = 1'd0;
+    parameter <no_type> DST_A = 2'd3;
+    parameter <no_type> DST_X = 2'd1;
+    parameter <no_type> DST_Y = 2'd2;
+    parameter <no_type> DST__ = 2'bxx;
+    parameter <no_type> FLAG_ADD = 2'd1;
+    parameter <no_type> FLAG_BIT = 2'd3;
+    parameter <no_type> FLAG_CMP = 2'd2;
+    parameter <no_type> FLAG____ = 2'd0;
+    parameter <no_type> IDX0 = 5'd17;
+    parameter <no_type> IDX1 = 5'd18;
+    parameter <no_type> IDX2 = 5'd19;
+    parameter <no_type> IDX_XY = 2'd3;
+    parameter <no_type> IDX_X_ = 2'd1;
+    parameter <no_type> IDX__Y = 2'd2;
+    parameter <no_type> IDX___ = 2'd0;
+    parameter <no_type> IMM0 = 5'd1;
+    parameter <no_type> IND0 = 5'd25;
+    parameter <no_type> IND1 = 5'd26;
+    parameter <no_type> IX = <SEL_X=2'd1, wid=2>;
+    parameter <no_type> IY = <SEL_Y=2'd2, wid=2>;
+    parameter <no_type> IZ = <SEL_Z=2'd0, wid=2>;
+    parameter <no_type> JMP0 = 5'd15;
+    parameter <no_type> JMP1 = 5'd16;
+    parameter <no_type> JSR0 = 5'd9;
+    parameter <no_type> JSR1 = 5'd10;
+    parameter <no_type> JSR2 = 5'd11;
+    parameter <no_type> LDA = 2'd1;
+    parameter <no_type> NOP = 2'd0;
+    parameter <no_type> PHA0 = 5'd2;
+    parameter <no_type> PLA0 = 5'd3;
+    parameter <no_type> RMW = 2'd3;
+    parameter <no_type> RMW0 = 5'd30;
+    parameter <no_type> RMW1 = 5'd31;
+    parameter <no_type> RTI0 = 5'd24;
+    parameter <no_type> RTS0 = 5'd12;
+    parameter <no_type> RTS1 = 5'd13;
+    parameter <no_type> RTS2 = 5'd14;
+    parameter <no_type> SEL_A = 2'd3;
+    parameter <no_type> SEL_X = 2'd1;
+    parameter <no_type> SEL_Y = 2'd2;
+    parameter <no_type> SEL_Z = 2'd0;
+    parameter <no_type> SRC_A = 2'd3;
+    parameter <no_type> SRC_X = 2'd1;
+    parameter <no_type> SRC_Y = 2'd2;
+    parameter <no_type> SRC_Z = 2'd0;
+    parameter <no_type> SRC__ = 2'bxx;
+    parameter <no_type> STA = 2'd2;
+    parameter <no_type> SYNC = 5'd0;
+    parameter <no_type> S_DEC = 2'd2;
+    parameter <no_type> S_INC = 2'd1;
+    parameter <no_type> S____ = 2'd0;
+    parameter <no_type> WE_1_ = 2'd1;
+    parameter <no_type> WE_ST = 2'd2;
+    parameter <no_type> WE___ = 2'd0;
+    parameter <no_type> ZPG0 = 5'd4;
+    parameter <no_type> ZPW0 = 5'd27;
+    enum sets {
+    }
+    enum names {
+    }
+    reg: S unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=2, lref=4) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2100 cpu.S
+    wire /*implicit*/: _ivl_0 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a19a0 cpu.regfile._ivl_0
+    wire /*implicit*/: _ivl_10 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[3:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=4 pin_count=1
+        [0]: 0x6000016a1a00 cpu.regfile._ivl_10
+    wire /*implicit*/: _ivl_13 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a19e0 cpu.regfile._ivl_13
+    wire /*implicit*/: _ivl_2 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[3:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=4 pin_count=1
+        [0]: 0x6000016a1960 cpu.regfile._ivl_2
+    wire /*implicit*/: _ivl_5 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[1:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1800 cpu.regfile._ivl_5
+    wire /*implicit*/: _ivl_8 unpacked dims=0 pin_count=1 (local) netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1a40 cpu.regfile._ivl_8
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1fa0 cpu.clk
+    wire: dst unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1d40 cpu.regfile.dst
+    wire: idx unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a2200 cpu.regfile.idx
+    wire: pull unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1900 cpu.pull
+    wire: push unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1c80 cpu.push
+    wire: reg_dst unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1c40 cpu.regfile.reg_dst
+    wire: reg_idx unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1a20 cpu.regfile.reg_idx
+    wire: reg_src unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[1:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=2 pin_count=1
+        [0]: 0x6000016a1980 cpu.regfile.reg_src
+    wire: reg_we unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1b40 cpu.regfile.reg_we
+    reg: regs[3:0] unpacked dims=1 pin_count=4 netvector_t:logic unsigned[7:0] (eref=4, lref=5) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=4 pins_are_virtual
+    wire: src unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a1f60 cpu.regfile.src
+    wire: txs unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=1, lref=0) scope=cpu.regfile #(0x0,0x0,0x0) vector_width=1 pin_count=1
+        [0]: 0x6000016a1c60 cpu.txs
+disas module <disas> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    enum sets {
+    }
+    enum names {
+    }
+    event _ivl_0; nprobe=1 scope=disas // disas.v:5
+    reg: mnemonic unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[23:0] (eref=0, lref=84) scope=disas #(0x0,0x0,0x0) vector_width=24 pin_count=1 pins_are_virtual
+    wire: opcode unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=1, lref=0) scope=disas #(0x0,0x0,0x0) vector_width=8 pin_count=1
+        [0]: 0x6000016a5420 disas.opcode
+main module <main> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    enum sets {
+    }
+    enum names {
+    }
+ram module <ram> instance 0 children, 0 classes
+    timescale = 10e0 / 10e0
+    enum sets {
+    }
+    enum names {
+    }
+    wire: AB unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[13:0] (eref=0, lref=0) scope=ram #(0x0,0x0,0x0) vector_width=14 pin_count=1
+    wire: DI unpacked dims=0 pin_count=1 output netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=ram #(0x0,0x0,0x0) vector_width=8 pin_count=1
+    wire: DO unpacked dims=0 pin_count=1 input netvector_t:logic unsigned[7:0] (eref=0, lref=0) scope=ram #(0x0,0x0,0x0) vector_width=8 pin_count=1
+    wire: RDY unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=ram #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    wire: WE unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=ram #(0x0,0x0,0x0) vector_width=1 pin_count=1
+    wire: clk unpacked dims=0 pin_count=1 input netvector_t:logic unsigned (eref=0, lref=0) scope=ram #(0x0,0x0,0x0) vector_width=1 pin_count=1
+ELABORATED NODES:
+constant 1'sd-1: _ivl_1 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a0aa0 cpu.B
+constant 1'd1: _ivl_3 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a0b60 cpu._ivl_2
+NetConcat: _ivl_5 #(0,0,0) scope=cpu width=8
+    0 pin0 O (strong0 strong1): 0x6000016a0b40 cpu.P
+    1 pin1 I (strong0 strong1): 0x6000016a1fe0 cpu.C
+    2 pin2 I (strong0 strong1): 0x6000016a0ba0 cpu.Z
+    3 pin3 I (strong0 strong1): 0x6000016a0c20 cpu.I
+    4 pin4 I (strong0 strong1): 0x6000016a0c00 cpu.D
+    5 pin5 I (strong0 strong1): 0x6000016a0aa0 cpu.B
+    6 pin6 I (strong0 strong1): 0x6000016a0b60 cpu._ivl_2
+    7 pin7 I (strong0 strong1): 0x6000016a0de0 cpu.V
+    8 pin8 I (strong0 strong1): 0x6000016a0dc0 cpu.N
+constant 5'd0: _ivl_7 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a0d60 cpu._ivl_6
+LPM_COMPARE (NetCompare unsigned): _ivl_9
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x6000016a0a80 cpu.sync
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x6000016a0b00 cpu.state
+    7 pin7 I (strong0 strong1): 0x6000016a0d60 cpu._ivl_6
+NetPartSelect(VP): _ivl_10 #(.,.,.) off=17 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a1620 cpu.ins_type
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+constant 2'd1: _ivl_13 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a0ae0 cpu._ivl_12
+LPM_COMPARE (NetCompare unsigned): _ivl_15
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x6000016a1640 cpu.adc_sbc
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x6000016a1620 cpu.ins_type
+    7 pin7 I (strong0 strong1): 0x6000016a0ae0 cpu._ivl_12
+constant 2'd2: _ivl_17 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a1660 cpu._ivl_16
+LPM_COMPARE (NetCompare unsigned): _ivl_19
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x6000016a1680 cpu.cmp
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x6000016a1620 cpu.ins_type
+    7 pin7 I (strong0 strong1): 0x6000016a1660 cpu._ivl_16
+constant 2'd3: _ivl_21 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a16a0 cpu._ivl_20
+LPM_COMPARE (NetCompare unsigned): _ivl_23
+    0 pin0 O (strong0 strong1): 
+    1 pin1 O (strong0 strong1): 
+    2 pin2 O (strong0 strong1): 0x6000016a16c0 cpu.bit_isn
+    3 pin3 O (strong0 strong1): 
+    4 pin4 O (strong0 strong1): 
+    5 pin5 O (strong0 strong1): 
+    6 pin6 I (strong0 strong1): 0x6000016a1620 cpu.ins_type
+    7 pin7 I (strong0 strong1): 0x6000016a16a0 cpu._ivl_20
+NetPartSelect(VP): _ivl_24 #(.,.,.) off=16 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1720 cpu.store
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+NetPartSelect(VP): _ivl_26 #(.,.,.) off=15 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1760 cpu.load
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+NetPartSelect(VP): _ivl_28 #(.,.,.) off=2 wid=9
+    0 pin0 O (strong0 strong1): 0x6000016a1ce0 cpu.alu_op
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+NetPartSelect(VP): _ivl_30 #(.,.,.) off=8 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a17c0 cpu.shift
+    1 pin1 I (strong0 strong1): 0x6000016a1ce0 cpu.alu_op
+NetPartSelect(VP): _ivl_32 #(.,.,.) off=0 wid=10
+    0 pin0 O (strong0 strong1): 0x6000016a16e0 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+NetPartSelect(VP): _ivl_34 #(.,.,.) off=10 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a1840 cpu.we_op
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+NetPartSelect(VP): _ivl_36 #(.,.,.) off=12 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1880 cpu.dr_di
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+NetPartSelect(VP): _ivl_38 #(.,.,.) off=13 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a18c0 cpu.do_op
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+NetPartSelect(VP): _ivl_40 #(.,.,.) off=18 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1c80 cpu.push
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+NetPartSelect(VP): _ivl_42 #(.,.,.) off=17 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1900 cpu.pull
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+NetArrayDq: _ivl_1 array=regs
+    0 pin0 O (strong0 strong1): 0x6000016a19a0 cpu.regfile._ivl_0
+    1 pin1 I (strong0 strong1): 0x6000016a1960 cpu.regfile._ivl_2
+NetConcat: _ivl_3 #(0,0,0) scope=cpu.regfile width=4
+    0 pin0 O (strong0 strong1): 0x6000016a1960 cpu.regfile._ivl_2
+    1 pin1 I (strong0 strong1): 0x6000016a1980 cpu.regfile.reg_src
+    2 pin2 I (strong0 strong1): 0x6000016a1800 cpu.regfile._ivl_5
+constant 2'd0: _ivl_4 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a1800 cpu.regfile._ivl_5
+NetBUFZ: _ivl_6 scope=cpu.regfile delay=(0x0,0x0,0x0) width=8 non-transparent
+    0 pin0 O (strong0 strong1): 0x6000016a1f60 cpu.regfile.src
+    1 pin1 I (strong0 strong1): 0x6000016a19a0 cpu.regfile._ivl_0
+NetArrayDq: _ivl_9 array=regs
+    0 pin0 O (strong0 strong1): 0x6000016a1a40 cpu.regfile._ivl_8
+    1 pin1 I (strong0 strong1): 0x6000016a1a00 cpu.regfile._ivl_10
+NetConcat: _ivl_11 #(0,0,0) scope=cpu.regfile width=4
+    0 pin0 O (strong0 strong1): 0x6000016a1a00 cpu.regfile._ivl_10
+    1 pin1 I (strong0 strong1): 0x6000016a1a20 cpu.regfile.reg_idx
+    2 pin2 I (strong0 strong1): 0x6000016a19e0 cpu.regfile._ivl_13
+constant 2'd0: _ivl_12 #(.,.,.)
+    0 pin0 O (strong0 strong1): 0x6000016a19e0 cpu.regfile._ivl_13
+NetBUFZ: _ivl_14 scope=cpu.regfile delay=(0x0,0x0,0x0) width=8 non-transparent
+    0 pin0 O (strong0 strong1): 0x6000016a2200 cpu.regfile.idx
+    1 pin1 I (strong0 strong1): 0x6000016a1a40 cpu.regfile._ivl_8
+logic: not #(0x0,0x0,0x0) _ivl_45 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a1ba0 cpu._ivl_44
+    1 pin1 I (strong0 strong1): 0x6000016a1720 cpu.store
+logic: and #(0x0,0x0,0x0) _ivl_47 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a1bc0 cpu._ivl_46
+    1 pin1 I (strong0 strong1): 0x6000016a1760 cpu.load
+    2 pin2 I (strong0 strong1): 0x6000016a1ba0 cpu._ivl_44
+logic: and #(0x0,0x0,0x0) _ivl_49 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a1b40 cpu.regfile.reg_we
+    1 pin1 I (strong0 strong1): 0x6000016a1bc0 cpu._ivl_46
+    2 pin2 I (strong0 strong1): 0x6000016a0a80 cpu.sync
+NetPartSelect(VP): _ivl_50 #(.,.,.) off=13 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a1980 cpu.regfile.reg_src
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+NetPartSelect(VP): _ivl_52 #(.,.,.) off=11 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a1c40 cpu.regfile.reg_dst
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+NetPartSelect(VP): _ivl_54 #(.,.,.) off=0 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a1be0 cpu._ivl_55
+    1 pin1 I (strong0 strong1): 0x6000016a15e0 cpu.control
+NetPartSelect(VP): _ivl_56 #(.,.,.) off=15 wid=2
+    0 pin0 O (strong0 strong1): 0x6000016a1c20 cpu._ivl_57
+    1 pin1 I (strong0 strong1): 0x6000016a1780 cpu.bus_op
+logic: and #(0x0,0x0,0x0) _ivl_59 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a1a20 cpu.regfile.reg_idx
+    1 pin1 I (strong0 strong1): 0x6000016a1be0 cpu._ivl_55
+    2 pin2 I (strong0 strong1): 0x6000016a1c20 cpu._ivl_57
+NetPartSelect(VP): _ivl_0 #(.,.,.) off=8 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1d00 cpu.alu.shift
+    1 pin1 I (strong0 strong1): 0x6000016a1ce0 cpu.alu_op
+NetPartSelect(VP): _ivl_2 #(.,.,.) off=7 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1ca0 cpu.alu.right
+    1 pin1 I (strong0 strong1): 0x6000016a1ce0 cpu.alu_op
+reduction logic: nor #(0x0,0x0,0x0) _ivl_4 scope=cpu.alu
+    0 pin0 O (strong0 strong1): 0x6000016a1d20 cpu.alu_Z
+    1 pin1 I (strong0 strong1): 0x6000016a1d40 cpu.regfile.dst
+NetPartSelect(VP): _ivl_6 #(.,.,.) off=7 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1d60 cpu.alu_N
+    1 pin1 I (strong0 strong1): 0x6000016a1d40 cpu.regfile.dst
+NetPartSelect(VP): _ivl_8 #(.,.,.) off=7 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1da0 cpu.alu._ivl_9
+    1 pin1 I (strong0 strong1): 0x6000016a1d80 cpu.alu.alu_ai
+NetPartSelect(VP): _ivl_10 #(.,.,.) off=7 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1de0 cpu.alu._ivl_11
+    1 pin1 I (strong0 strong1): 0x6000016a1dc0 cpu.alu.alu_bi
+logic: xor #(0x0,0x0,0x0) _ivl_13 scope=cpu.alu
+    0 pin0 O (strong0 strong1): 0x6000016a1e00 cpu.alu._ivl_12
+    1 pin1 I (strong0 strong1): 0x6000016a1da0 cpu.alu._ivl_9
+    2 pin2 I (strong0 strong1): 0x6000016a1de0 cpu.alu._ivl_11
+logic: xor #(0x0,0x0,0x0) _ivl_15 scope=cpu.alu
+    0 pin0 O (strong0 strong1): 0x6000016a1e20 cpu.alu._ivl_14
+    1 pin1 I (strong0 strong1): 0x6000016a1e00 cpu.alu._ivl_12
+    2 pin2 I (strong0 strong1): 0x6000016a1e40 cpu.alu_C
+logic: xor #(0x0,0x0,0x0) _ivl_17 scope=cpu.alu
+    0 pin0 O (strong0 strong1): 0x6000016a1e60 cpu.alu_V
+    1 pin1 I (strong0 strong1): 0x6000016a1e20 cpu.alu._ivl_14
+    2 pin2 I (strong0 strong1): 0x6000016a1d60 cpu.alu_N
+anyedge -> _ivl_18; 
+    0 pin0 I (strong0 strong1): 0x6000016a1ce0 cpu.alu_op
+    1 pin1 I (strong0 strong1): 0x6000016a1f60 cpu.regfile.src
+    2 pin2 I (strong0 strong1): 0x6000016a2180 cpu.DR
+    3 pin3 I (strong0 strong1): 0x6000016a2100 cpu.S
+    4 pin4 I (strong0 strong1): 0x6000016a1fe0 cpu.C
+    5 pin5 I (strong0 strong1): 0x6000016a1d80 cpu.alu.alu_ai
+    6 pin6 I (strong0 strong1): 0x6000016a1dc0 cpu.alu.alu_bi
+    7 pin7 I (strong0 strong1): 0x6000016a2000 cpu.alu.alu_ci
+    8 pin8 I (strong0 strong1): 0x6000016a1d00 cpu.alu.shift
+    9 pin9 I (strong0 strong1): 0x6000016a1ca0 cpu.alu.right
+    10 pin10 I (strong0 strong1): 0x6000016a2020 cpu.alu.alu_si
+    11 pin11 I (strong0 strong1): 0x6000016a1d40 cpu.regfile.dst
+    12 pin12 I (strong0 strong1): 0x6000016a2140 cpu.DI
+NetConcat: _ivl_1 #(0,0,0) scope=cpu.ab width=16
+    0 pin0 O (strong0 strong1): 0x6000016a1940 cpu.ab._ivl_0
+    1 pin1 I (strong0 strong1): 0x6000016a0bc0 cpu.ab.ABL
+    2 pin2 I (strong0 strong1): 0x6000016a19c0 cpu.ab.ABH
+NetPartSelect(VP): _ivl_2 #(.,.,.) off=0 wid=14
+    0 pin0 O (strong0 strong1): 0x6000016a1c00 cpu.AB
+    1 pin1 I (strong0 strong1): 0x6000016a1940 cpu.ab._ivl_0
+NetPartSelect(VP): _ivl_4 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1e80 cpu.ab.abl_ci
+    1 pin1 I (strong0 strong1): 0x6000016a16e0 cpu.ab_op
+NetPartSelect(VP): _ivl_6 #(.,.,.) off=9 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1f40 cpu.ab._ivl_7
+    1 pin1 I (strong0 strong1): 0x6000016a16e0 cpu.ab_op
+logic: and #(0x0,0x0,0x0) _ivl_9 scope=cpu.ab
+    0 pin0 O (strong0 strong1): 0x6000016a1ec0 cpu.ab.abh_ci
+    1 pin1 I (strong0 strong1): 0x6000016a1f40 cpu.ab._ivl_7
+    2 pin2 I (strong0 strong1): 0x6000016a1f20 cpu.ab.abl_co
+posedge -> _ivl_12; 
+    0 pin0 I (strong0 strong1): 0x6000016a1fa0 cpu.clk
+anyedge -> _ivl_14; 
+    0 pin0 I (strong0 strong1): 0x6000016a16e0 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x6000016a2100 cpu.S
+    2 pin2 I (strong0 strong1): 0x6000016a20e0 cpu.PC
+    3 pin3 I (strong0 strong1): 0x6000016a2140 cpu.DI
+    4 pin4 I (strong0 strong1): 0x6000016a2180 cpu.DR
+    5 pin5 I (strong0 strong1): 0x6000016a2120 cpu.ab.ab_hold
+anyedge -> _ivl_16; 
+    0 pin0 I (strong0 strong1): 0x6000016a16e0 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x6000016a21c0 cpu.ab.base
+    2 pin2 I (strong0 strong1): 0x6000016a1e80 cpu.ab.abl_ci
+    3 pin3 I (strong0 strong1): 0x6000016a2200 cpu.regfile.idx
+    4 pin4 I (strong0 strong1): 0x6000016a2140 cpu.DI
+anyedge -> _ivl_18; 
+    0 pin0 I (strong0 strong1): 0x6000016a16e0 cpu.ab_op
+    1 pin1 I (strong0 strong1): 0x6000016a21c0 cpu.ab.base
+    2 pin2 I (strong0 strong1): 0x6000016a1ec0 cpu.ab.abh_ci
+NetPartSelect(VP): _ivl_60 #(.,.,.) off=0 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1a60 cpu._ivl_61
+    1 pin1 I (strong0 strong1): 0x6000016a1840 cpu.we_op
+NetPartSelect(VP): _ivl_62 #(.,.,.) off=1 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a1f80 cpu._ivl_63
+    1 pin1 I (strong0 strong1): 0x6000016a1840 cpu.we_op
+logic: and #(0x0,0x0,0x0) _ivl_65 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a2060 cpu._ivl_64
+    1 pin1 I (strong0 strong1): 0x6000016a1f80 cpu._ivl_63
+    2 pin2 I (strong0 strong1): 0x6000016a1720 cpu.store
+logic: or #(0x0,0x0,0x0) _ivl_67 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a2040 cpu.WE
+    1 pin1 I (strong0 strong1): 0x6000016a1a60 cpu._ivl_61
+    2 pin2 I (strong0 strong1): 0x6000016a2060 cpu._ivl_64
+NetPartSelect(VP): _ivl_68 #(.,.,.) off=8 wid=1
+    0 pin0 O (strong0 strong1): 0x6000016a22a0 cpu._ivl_69
+    1 pin1 I (strong0 strong1): 0x6000016a22c0 cpu.DIHOLD
+NetPartSelect(VP): _ivl_70 #(.,.,.) off=0 wid=8
+    0 pin0 O (strong0 strong1): 0x6000016a1fc0 cpu._ivl_71
+    1 pin1 I (strong0 strong1): 0x6000016a22c0 cpu.DIHOLD
+Multiplexer (NetMux): _ivl_73 width=8 swidth=1 size=2 scope=cpu
+    0 pin0 O (strong0 strong1): 0x6000016a22e0 cpu.IR
+    1 pin1 I (strong0 strong1): 0x6000016a22a0 cpu._ivl_69
+    2 pin2 I (strong0 strong1): 0x6000016a2140 cpu.DI
+    3 pin3 I (strong0 strong1): 0x6000016a1fc0 cpu._ivl_71
+NetPartSelect(VP): _ivl_74 #(.,.,.) off=0 wid=5
+    0 pin0 O (strong0 strong1): 0x6000016a2320 cpu.init_state
+    1 pin1 I (strong0 strong1): 0x6000016a2300 cpu.decode
+anyedge -> _ivl_78; 
+    0 pin0 I (strong0 strong1): 0x6000016a18c0 cpu.do_op
+    1 pin1 I (strong0 strong1): 0x6000016a1d40 cpu.regfile.dst
+    2 pin2 I (strong0 strong1): 0x6000016a23c0 cpu.php
+    3 pin3 I (strong0 strong1): 0x6000016a0b40 cpu.P
+    4 pin4 I (strong0 strong1): 0x6000016a20e0 cpu.PC
+anyedge -> _ivl_94; 
+    0 pin0 I (strong0 strong1): 0x6000016a25e0 cpu.cond_code
+    1 pin1 I (strong0 strong1): 0x6000016a0dc0 cpu.N
+    2 pin2 I (strong0 strong1): 0x6000016a0de0 cpu.V
+    3 pin3 I (strong0 strong1): 0x6000016a1fe0 cpu.C
+    4 pin4 I (strong0 strong1): 0x6000016a0ba0 cpu.Z
+anyedge -> _ivl_98; 
+    0 pin0 I (strong0 strong1): 0x6000016a0b00 cpu.state
+    1 pin1 I (strong0 strong1): 0x6000016a3220 cpu.cond
+    2 pin2 I (strong0 strong1): 0x6000016a2140 cpu.DI
+    3 pin3 I (strong0 strong1): 0x6000016a3260 cpu.rti
+anyedge -> _ivl_102; 
+    0 pin0 I (strong0 strong1): 0x6000016a22e0 cpu.IR
+anyedge -> _ivl_0; 
+    0 pin0 I (strong0 strong1): 0x6000016a5420 disas.opcode
+ELABORATED BRANCHES:
+ELABORATED PROCESSES:
+always  /* disas.v:5 in disas */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_0)  // disas.v:5
+    casez (opcode[7:0])
+      8'd0:
+          {mnemonic} = "BRK";
+      8'd8:
+          {mnemonic} = "PHP";
+      8'd18:
+          {mnemonic} = "ORA";
+      8'd50:
+          {mnemonic} = "AND";
+      8'd82:
+          {mnemonic} = "EOR";
+      8'd114:
+          {mnemonic} = "ADC";
+      8'd146:
+          {mnemonic} = "STA";
+      8'd178:
+          {mnemonic} = "LDA";
+      8'd210:
+          {mnemonic} = "CMP";
+      8'd242:
+          {mnemonic} = "SBC";
+      8'b011z0100:
+          {mnemonic} = "STZ";
+      8'b100111z0:
+          {mnemonic} = "STZ";
+      8'd90:
+          {mnemonic} = "PHY";
+      8'd218:
+          {mnemonic} = "PHX";
+      8'd122:
+          {mnemonic} = "PLY";
+      8'd250:
+          {mnemonic} = "PLX";
+      8'b000zzz01:
+          {mnemonic} = "ORA";
+      8'd16:
+          {mnemonic} = "BPL";
+      8'd26:
+          {mnemonic} = "INA";
+      8'b000zzz10:
+          {mnemonic} = "ASL";
+      8'd24:
+          {mnemonic} = "CLC";
+      8'd32:
+          {mnemonic} = "JSR";
+      8'd40:
+          {mnemonic} = "PLP";
+      8'b001zz100:
+          {mnemonic} = "BIT";
+      8'd137:
+          {mnemonic} = "BIT";
+      8'b001zzz01:
+          {mnemonic} = "AND";
+      8'd48:
+          {mnemonic} = "BMI";
+      8'd58:
+          {mnemonic} = "DEA";
+      8'b001zzz10:
+          {mnemonic} = "ROL";
+      8'd56:
+          {mnemonic} = "SEC";
+      8'd64:
+          {mnemonic} = "RTI";
+      8'd72:
+          {mnemonic} = "PHA";
+      8'b010zzz01:
+          {mnemonic} = "EOR";
+      8'd80:
+          {mnemonic} = "BVC";
+      8'b010zzz10:
+          {mnemonic} = "LSR";
+      8'd88:
+          {mnemonic} = "CLI";
+      8'b01zz1100:
+          {mnemonic} = "JMP";
+      8'd96:
+          {mnemonic} = "RTS";
+      8'd104:
+          {mnemonic} = "PLA";
+      8'b011zzz01:
+          {mnemonic} = "ADC";
+      8'd112:
+          {mnemonic} = "BVS";
+      8'b011zzz10:
+          {mnemonic} = "ROR";
+      8'd120:
+          {mnemonic} = "SEI";
+      8'd128:
+          {mnemonic} = "BRA";
+      8'd136:
+          {mnemonic} = "DEY";
+      8'b1000z100:
+          {mnemonic} = "STY";
+      8'd148:
+          {mnemonic} = "STY";
+      8'd138:
+          {mnemonic} = "TXA";
+      8'd146:
+          {mnemonic} = "STA";
+      8'b100zzz01:
+          {mnemonic} = "STA";
+      8'd144:
+          {mnemonic} = "BCC";
+      8'd152:
+          {mnemonic} = "TYA";
+      8'd154:
+          {mnemonic} = "TXS";
+      8'b100zz110:
+          {mnemonic} = "STX";
+      8'd160:
+          {mnemonic} = "LDY";
+      8'd168:
+          {mnemonic} = "TAY";
+      8'd170:
+          {mnemonic} = "TAX";
+      8'b101zzz01:
+          {mnemonic} = "LDA";
+      8'd176:
+          {mnemonic} = "BCS";
+      8'b101zz100:
+          {mnemonic} = "LDY";
+      8'd184:
+          {mnemonic} = "CLV";
+      8'd186:
+          {mnemonic} = "TSX";
+      8'b101zz110:
+          {mnemonic} = "LDX";
+      8'd162:
+          {mnemonic} = "LDX";
+      8'd192:
+          {mnemonic} = "CPY";
+      8'd200:
+          {mnemonic} = "INY";
+      8'b1100z100:
+          {mnemonic} = "CPY";
+      8'd202:
+          {mnemonic} = "DEX";
+      8'b110zzz01:
+          {mnemonic} = "CMP";
+      8'd208:
+          {mnemonic} = "BNE";
+      8'd216:
+          {mnemonic} = "CLD";
+      8'b110zz110:
+          {mnemonic} = "DEC";
+      8'd224:
+          {mnemonic} = "CPX";
+      8'd232:
+          {mnemonic} = "INX";
+      8'b1110z100:
+          {mnemonic} = "CPX";
+      8'd234:
+          {mnemonic} = "NOP";
+      8'b111zzz01:
+          {mnemonic} = "SBC";
+      8'd240:
+          {mnemonic} = "BEQ";
+      8'd248:
+          {mnemonic} = "SED";
+      8'b111zz110:
+          {mnemonic} = "INC";
+      8'd219:
+          {mnemonic} = "STP";
+      8'b0000z100:
+          {mnemonic} = "TSB";
+      8'b0001z100:
+          {mnemonic} = "TRB";
+      default:
+          {mnemonic} = "___";
+    endcase
+always  /* cpu.v:461 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_102)  // cpu.v:461
+    case (IR[7:0])
+      8'd109:
+          {decode} = 24'd6226694;
+      8'd125:
+          {decode} = 24'd6226726;
+      8'd121:
+          {decode} = 24'd6226758;
+      8'd105:
+          {decode} = 24'd6226689;
+      8'd101:
+          {decode} = 24'd6226692;
+      8'd114:
+          {decode} = 24'd6226705;
+      8'd97:
+          {decode} = 24'd6226737;
+      8'd117:
+          {decode} = 24'd6226724;
+      8'd113:
+          {decode} = 24'd6226769;
+      8'd237:
+          {decode} = 24'd6227718;
+      8'd253:
+          {decode} = 24'd6227750;
+      8'd249:
+          {decode} = 24'd6227782;
+      8'd233:
+          {decode} = 24'd6227713;
+      8'd229:
+          {decode} = 24'd6227716;
+      8'd242:
+          {decode} = 24'd6227729;
+      8'd225:
+          {decode} = 24'd6227761;
+      8'd245:
+          {decode} = 24'd6227748;
+      8'd241:
+          {decode} = 24'd6227793;
+      8'd45:
+          {decode} = 24'd2041862;
+      8'd61:
+          {decode} = 24'd2041894;
+      8'd57:
+          {decode} = 24'd2041926;
+      8'd41:
+          {decode} = 24'd2041857;
+      8'd37:
+          {decode} = 24'd2041860;
+      8'd50:
+          {decode} = 24'd2041873;
+      8'd33:
+          {decode} = 24'd2041905;
+      8'd53:
+          {decode} = 24'd2041892;
+      8'd49:
+          {decode} = 24'd2041937;
+      8'd13:
+          {decode} = 24'd2039814;
+      8'd29:
+          {decode} = 24'd2039846;
+      8'd25:
+          {decode} = 24'd2039878;
+      8'd9:
+          {decode} = 24'd2039809;
+      8'd5:
+          {decode} = 24'd2039812;
+      8'd18:
+          {decode} = 24'd2039825;
+      8'd1:
+          {decode} = 24'd2039857;
+      8'd21:
+          {decode} = 24'd2039844;
+      8'd17:
+          {decode} = 24'd2039889;
+      8'd173:
+          {decode} = 24'd2033670;
+      8'd189:
+          {decode} = 24'd2033702;
+      8'd185:
+          {decode} = 24'd2033734;
+      8'd169:
+          {decode} = 24'd2033665;
+      8'd165:
+          {decode} = 24'd2033668;
+      8'd178:
+          {decode} = 24'd2033681;
+      8'd161:
+          {decode} = 24'd2033713;
+      8'd181:
+          {decode} = 24'd2033700;
+      8'd177:
+          {decode} = 24'd2033745;
+      8'd205:
+          {decode} = 24'b100011xx0000011010000110;
+      8'd221:
+          {decode} = 24'b100011xx0000011010100110;
+      8'd217:
+          {decode} = 24'b100011xx0000011011000110;
+      8'd201:
+          {decode} = 24'b100011xx0000011010000001;
+      8'd197:
+          {decode} = 24'b100011xx0000011010000100;
+      8'd210:
+          {decode} = 24'b100011xx0000011010010001;
+      8'd193:
+          {decode} = 24'b100011xx0000011010110001;
+      8'd213:
+          {decode} = 24'b100011xx0000011010100100;
+      8'd209:
+          {decode} = 24'b100011xx0000011011010001;
+      8'd77:
+          {decode} = 24'd2043910;
+      8'd93:
+          {decode} = 24'd2043942;
+      8'd89:
+          {decode} = 24'd2043974;
+      8'd73:
+          {decode} = 24'd2043905;
+      8'd69:
+          {decode} = 24'd2043908;
+      8'd82:
+          {decode} = 24'd2043921;
+      8'd65:
+          {decode} = 24'd2043953;
+      8'd85:
+          {decode} = 24'd2043940;
+      8'd81:
+          {decode} = 24'd2043985;
+      8'd141:
+          {decode} = 24'b001011xx0000000000000110;
+      8'd157:
+          {decode} = 24'b001011xx0000000000100110;
+      8'd153:
+          {decode} = 24'b001011xx0000000001000110;
+      8'd133:
+          {decode} = 24'b001011xx0000000000000100;
+      8'd146:
+          {decode} = 24'b001011xx0000000000010001;
+      8'd129:
+          {decode} = 24'b001011xx0000000000110001;
+      8'd149:
+          {decode} = 24'b001011xx0000000000100100;
+      8'd145:
+          {decode} = 24'b001011xx0000000001010001;
+      8'd10:
+          {decode} = 24'd2064384;
+      8'd74:
+          {decode} = 24'd2080768;
+      8'd42:
+          {decode} = 24'd2064768;
+      8'd106:
+          {decode} = 24'd2081152;
+      8'd14:
+          {decode} = 24'b0011xxxx1000100000011100;
+      8'd30:
+          {decode} = 24'b0011xxxx1000100000111100;
+      8'd6:
+          {decode} = 24'b0011xxxx1000100000011011;
+      8'd22:
+          {decode} = 24'b0011xxxx1000100000111011;
+      8'd78:
+          {decode} = 24'b0011xxxx1100100000011100;
+      8'd94:
+          {decode} = 24'b0011xxxx1100100000111100;
+      8'd70:
+          {decode} = 24'b0011xxxx1100100000011011;
+      8'd86:
+          {decode} = 24'b0011xxxx1100100000111011;
+      8'd46:
+          {decode} = 24'b0011xxxx1000100110011100;
+      8'd62:
+          {decode} = 24'b0011xxxx1000100110111100;
+      8'd38:
+          {decode} = 24'b0011xxxx1000100110011011;
+      8'd54:
+          {decode} = 24'b0011xxxx1000100110111011;
+      8'd110:
+          {decode} = 24'b0011xxxx1100100110011100;
+      8'd126:
+          {decode} = 24'b0011xxxx1100100110111100;
+      8'd102:
+          {decode} = 24'b0011xxxx1100100110011011;
+      8'd118:
+          {decode} = 24'b0011xxxx1100100110111011;
+      8'd144:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd176:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd240:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd48:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd208:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd16:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd128:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd80:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd112:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001000;
+      8'd44:
+          {decode} = 24'b110011xx0010100000000110;
+      8'd60:
+          {decode} = 24'b110011xx0010100000100110;
+      8'd137:
+          {decode} = 24'b110011xx0010100000000001;
+      8'd36:
+          {decode} = 24'b110011xx0010100000000100;
+      8'd52:
+          {decode} = 24'b110011xx0010100000100100;
+      8'd24:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000000;
+      8'd88:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000000;
+      8'd184:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000000;
+      8'd56:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000000;
+      8'd120:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000000;
+      8'd234:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000000;
+      8'd236:
+          {decode} = 24'b100001xx0000011010000110;
+      8'd224:
+          {decode} = 24'b100001xx0000011010000001;
+      8'd228:
+          {decode} = 24'b100001xx0000011010000100;
+      8'd204:
+          {decode} = 24'b100010xx0000011010000110;
+      8'd192:
+          {decode} = 24'b100010xx0000011010000001;
+      8'd196:
+          {decode} = 24'b100010xx0000011010000100;
+      8'd206:
+          {decode} = 24'b0011xxxx0000110000011100;
+      8'd222:
+          {decode} = 24'b0011xxxx0000110000111100;
+      8'd198:
+          {decode} = 24'b0011xxxx0000110000011011;
+      8'd214:
+          {decode} = 24'b0011xxxx0000110000111011;
+      8'd238:
+          {decode} = 24'b0011xxxx0000100010011100;
+      8'd254:
+          {decode} = 24'b0011xxxx0000100010111100;
+      8'd230:
+          {decode} = 24'b0011xxxx0000100010011011;
+      8'd246:
+          {decode} = 24'b0011xxxx0000100010111011;
+      8'd58:
+          {decode} = 24'd2032640;
+      8'd202:
+          {decode} = 24'd1377280;
+      8'd136:
+          {decode} = 24'd1704960;
+      8'd26:
+          {decode} = 24'd2031744;
+      8'd232:
+          {decode} = 24'd1376384;
+      8'd200:
+          {decode} = 24'd1704064;
+      8'd170:
+          {decode} = 24'd1900544;
+      8'd168:
+          {decode} = 24'd1966080;
+      8'd186:
+          {decode} = 24'b0001xx010011100000000000;
+      8'd154:
+          {decode} = 24'b000001xx0000000000000000;
+      8'd138:
+          {decode} = 24'd1507328;
+      8'd152:
+          {decode} = 24'd1769472;
+      8'd0:
+          {decode} = 24'b0000xxxxxxxxxxxxx0010100;
+      8'd76:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001111;
+      8'd108:
+          {decode} = 24'b0000xxxxxxxxxxxxx0011001;
+      8'd124:
+          {decode} = 24'b0000xxxxxxxxxxxxx0111001;
+      8'd32:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001001;
+      8'd64:
+          {decode} = 24'b0000xxxxxxxxxxxxx0011000;
+      8'd96:
+          {decode} = 24'b0000xxxxxxxxxxxxx0001100;
+      8'd174:
+          {decode} = 24'b0001xx010000100000000110;
+      8'd190:
+          {decode} = 24'b0001xx010000100001000110;
+      8'd162:
+          {decode} = 24'b0001xx010000100000000001;
+      8'd166:
+          {decode} = 24'b0001xx010000100000000100;
+      8'd182:
+          {decode} = 24'b0001xx010000100001000100;
+      8'd172:
+          {decode} = 24'b0001xx100000100000000110;
+      8'd188:
+          {decode} = 24'b0001xx100000100000100110;
+      8'd160:
+          {decode} = 24'b0001xx100000100000000001;
+      8'd164:
+          {decode} = 24'b0001xx100000100000000100;
+      8'd180:
+          {decode} = 24'b0001xx100000100000100100;
+      8'd72:
+          {decode} = 24'b000011xx0000000000000010;
+      8'd218:
+          {decode} = 24'b000001xx0000000000000010;
+      8'd90:
+          {decode} = 24'b000010xx0000000000000010;
+      8'd104:
+          {decode} = 24'b0001xx1101xxxxxxx0000011;
+      8'd250:
+          {decode} = 24'b0001xx0101xxxxxxx0000011;
+      8'd122:
+          {decode} = 24'b0001xx1001xxxxxxx0000011;
+      8'd8:
+          {decode} = 24'b0000xxxx0000000000000010;
+      8'd40:
+          {decode} = 24'b0000xxxxxxxxxxxxx0000011;
+      8'd142:
+          {decode} = 24'b001001xx0000000000000110;
+      8'd134:
+          {decode} = 24'b001001xx0000000000000100;
+      8'd150:
+          {decode} = 24'b001001xx0000000001000100;
+      8'd140:
+          {decode} = 24'b001010xx0000000000000110;
+      8'd132:
+          {decode} = 24'b001010xx0000000000000100;
+      8'd148:
+          {decode} = 24'b001010xx0000000000100100;
+      8'd156:
+          {decode} = 24'b001000xx0000000000000110;
+      8'd158:
+          {decode} = 24'b001000xx0000000000100110;
+      8'd100:
+          {decode} = 24'b001000xx0000000000000100;
+      8'd116:
+          {decode} = 24'b001000xx0000000000100100;
+      8'd28:
+          {decode} = 24'd6;
+      8'd20:
+          {decode} = 24'd4;
+      8'd12:
+          {decode} = 24'd6;
+      8'd4:
+          {decode} = 24'd4;
+      default:
+          {decode} = 24'bxxxxxxxxxxxxxxxxxxx00000;
+    endcase
+always  /* cpu.v:438 in cpu */
+  @(_ivl_12)  // cpu.v:438
+    if (sync)
+        begin
+            {control} <= <select=decode[23:0]['sd5+:19] expr_type=logic>;
+            {clc} <= (IR[7:0])==(8'd24);
+            {sec} <= (IR[7:0])==(8'd56);
+            {cld} <= (IR[7:0])==(8'd216);
+            {sed} <= (IR[7:0])==(8'd248);
+            {cli} <= (IR[7:0])==(8'd88);
+            {sei} <= (IR[7:0])==(8'd120);
+            {rti} <= (IR[7:0])==(8'd64);
+            {clv} <= (IR[7:0])==(8'd184);
+            {php} <= ((IR[7:0])==(8'd8))||((IR[7:0])==(8'd0));
+            {plp} <= (IR[7:0])==(8'd40);
+            {txs} <= (IR[7:0])==(8'd154);
+        end
+always  /* cpu.v:383 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_98)  // cpu.v:383
+    case (state[4:0])
+      <ABS0=5'd6, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <ABS1=5'd7, wid=5>:
+          {bus_op} = 19'd101010;
+      <ABW0=5'd28, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <ABW1=5'd29, wid=5>:
+          {bus_op} = 19'b0011xx0001010010010;
+      <BRA0=5'd8, wid=5>:
+          if ((cond)&(<select=DI[7:0]['sd7+:1] expr_type=logic>))
+              {bus_op} = 19'b0000xx0001100101100;
+          else
+              if (cond)
+                  {bus_op} = 19'b0000xx0001000101100;
+              else
+                  {bus_op} = 19'b0000xx0000000101000;
+      <BRK0=5'd20, wid=5>:
+          {bus_op} = 19'd279808;
+      <BRK1=5'd21, wid=5>:
+          {bus_op} = 19'd271616;
+      <BRK2=5'd22, wid=5>:
+          {bus_op} = 19'd288096;
+      <BRK3=5'd23, wid=5>:
+          {bus_op} = 19'b0000xx0000000101000;
+      <DATA=5'd5, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <IDX0=5'd17, wid=5>:
+          {bus_op} = 19'b0001xx1000010000110;
+      <IDX1=5'd18, wid=5>:
+          {bus_op} = 19'b0000xx1001000011001;
+      <IDX2=5'd19, wid=5>:
+          {bus_op} = 19'd68242;
+      <IMM0=5'd1, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <IND0=5'd25, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <IND1=5'd26, wid=5>:
+          {bus_op} = 19'b0001xx0001000110010;
+      <JMP0=5'd15, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <JMP1=5'd16, wid=5>:
+          {bus_op} = 19'b0000xx0001000110010;
+      <JSR0=5'd9, wid=5>:
+          {bus_op} = 19'd283904;
+      <JSR1=5'd10, wid=5>:
+          {bus_op} = 19'd271616;
+      <JSR2=5'd11, wid=5>:
+          {bus_op} = 19'b0000xx0000000101000;
+      <PHA0=5'd2, wid=5>:
+          {bus_op} = 19'd288000;
+      <PLA0=5'd3, wid=5>:
+          {bus_op} = 19'b0100xx1000100000001;
+      <RMW0=5'd30, wid=5>:
+          {bus_op} = 19'b0000xx1000000101000;
+      <RMW1=5'd31, wid=5>:
+          {bus_op} = 19'd1560;
+      <RTI0=5'd24, wid=5>:
+          {bus_op} = 19'b0100xx0000100000001;
+      <RTS0=5'd12, wid=5>:
+          {bus_op} = 19'b0100xx0000100000001;
+      <RTS1=5'd13, wid=5>:
+          {bus_op} = 19'b0100xx1000100000001;
+      <RTS2=5'd14, wid=5>:
+          if (rti)
+              {bus_op} = 19'b0000xx0001000110010;
+          else
+              {bus_op} = 19'b0000xx0001000110001;
+      <SYNC=5'd0, wid=5>:
+          {bus_op} = 19'b0000xx0000000101000;
+      <ZPG0=5'd4, wid=5>:
+          {bus_op} = 19'd100486;
+      <ZPW0=5'd27, wid=5>:
+          {bus_op} = 19'b0011xx0000010000110;
+    endcase
+always  /* cpu.v:328 in cpu */
+  @(_ivl_12)  // cpu.v:328
+    if (RST)
+        {state} <= <BRK3=5'd23, wid=5>;
+    else
+        case (state[4:0])
+          <SYNC=5'd0, wid=5>:
+              {state} <= init_state[4:0];
+          <ABS0=5'd6, wid=5>:
+              {state} <= <ABS1=5'd7, wid=5>;
+          <ABS1=5'd7, wid=5>:
+              {state} <= <DATA=5'd5, wid=5>;
+          <ABW0=5'd28, wid=5>:
+              {state} <= <ABW1=5'd29, wid=5>;
+          <ABW1=5'd29, wid=5>:
+              {state} <= <RMW0=5'd30, wid=5>;
+          <BRA0=5'd8, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <BRK0=5'd20, wid=5>:
+              {state} <= <BRK1=5'd21, wid=5>;
+          <BRK1=5'd21, wid=5>:
+              {state} <= <BRK2=5'd22, wid=5>;
+          <BRK2=5'd22, wid=5>:
+              {state} <= <BRK3=5'd23, wid=5>;
+          <BRK3=5'd23, wid=5>:
+              {state} <= <JMP0=5'd15, wid=5>;
+          <DATA=5'd5, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <IDX0=5'd17, wid=5>:
+              {state} <= <IDX1=5'd18, wid=5>;
+          <IDX1=5'd18, wid=5>:
+              {state} <= <IDX2=5'd19, wid=5>;
+          <IDX2=5'd19, wid=5>:
+              {state} <= <DATA=5'd5, wid=5>;
+          <IMM0=5'd1, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <IND0=5'd25, wid=5>:
+              {state} <= <IND1=5'd26, wid=5>;
+          <IND1=5'd26, wid=5>:
+              {state} <= <JMP0=5'd15, wid=5>;
+          <JMP0=5'd15, wid=5>:
+              {state} <= <JMP1=5'd16, wid=5>;
+          <JMP1=5'd16, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <JSR0=5'd9, wid=5>:
+              {state} <= <JSR1=5'd10, wid=5>;
+          <JSR1=5'd10, wid=5>:
+              {state} <= <JSR2=5'd11, wid=5>;
+          <JSR2=5'd11, wid=5>:
+              {state} <= <JMP1=5'd16, wid=5>;
+          <PHA0=5'd2, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <PLA0=5'd3, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <RMW0=5'd30, wid=5>:
+              {state} <= <RMW1=5'd31, wid=5>;
+          <RMW1=5'd31, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <RTI0=5'd24, wid=5>:
+              {state} <= <RTS0=5'd12, wid=5>;
+          <RTS0=5'd12, wid=5>:
+              {state} <= <RTS1=5'd13, wid=5>;
+          <RTS1=5'd13, wid=5>:
+              {state} <= <RTS2=5'd14, wid=5>;
+          <RTS2=5'd14, wid=5>:
+              {state} <= <SYNC=5'd0, wid=5>;
+          <ZPG0=5'd4, wid=5>:
+              {state} <= <DATA=5'd5, wid=5>;
+          <ZPW0=5'd27, wid=5>:
+              {state} <= <RMW0=5'd30, wid=5>;
+        endcase
+always  /* cpu.v:309 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_94)  // cpu.v:309
+    casez (cond_code[3:0])
+      4'b000z:
+          {cond} = ~(N);
+      4'b001z:
+          {cond} = N;
+      4'b010z:
+          {cond} = ~(V);
+      4'b011z:
+          {cond} = V;
+      4'd8:
+          {cond} = 1'sd-1;
+      4'd9:
+          {cond} = ~(C);
+      4'b101z:
+          {cond} = C;
+      4'b110z:
+          {cond} = ~(Z);
+      4'b111z:
+          {cond} = Z;
+    endcase
+always  /* cpu.v:306 in cpu */
+  @(_ivl_12)  // cpu.v:306
+    {cond_code} <= <select=IR[7:0]['sd4+:4] expr_type=logic>;
+always  /* cpu.v:293 in cpu */
+  @(_ivl_12)  // cpu.v:293
+    case (state[4:0])
+      <PLA0=5'd3, wid=5>:
+          {DIHOLD} <= {1'd1, DI[7:0]};
+      <PHA0=5'd2, wid=5>:
+          {DIHOLD} <= {1'd1, DI[7:0]};
+      <RMW1=5'd31, wid=5>:
+          {DIHOLD} <= {1'd1, DI[7:0]};
+      default:
+          {DIHOLD} <= {1'd0, DI[7:0]};
+    endcase
+always  /* cpu.v:272 in cpu */
+  @(_ivl_12)  // cpu.v:272
+    case (state[4:0])
+      <RTS0=5'd12, wid=5>:
+          if (rti)
+              {C} <= <select=DI[7:0]['sd0+:1] expr_type=logic>;
+      <SYNC=5'd0, wid=5>:
+          if (clc)
+              {C} <= 1'sd0;
+          else
+              if (sec)
+                  {C} <= 1'sd-1;
+              else
+                  if (((cmp)|(shift))|(adc_sbc))
+                      {C} <= alu_C;
+                  else
+                      if (plp)
+                          {C} <= <select=DI[7:0]['sd0+:1] expr_type=logic>;
+    endcase
+always  /* cpu.v:258 in cpu */
+  @(_ivl_12)  // cpu.v:258
+    case (state[4:0])
+      <RTS0=5'd12, wid=5>:
+          if (rti)
+              {Z} <= <select=DI[7:0]['sd1+:1] expr_type=logic>;
+      <SYNC=5'd0, wid=5>:
+          if (((load)|(cmp))|(bit_isn))
+              {Z} <= alu_Z;
+          else
+              if (plp)
+                  {Z} <= <select=DI[7:0]['sd1+:1] expr_type=logic>;
+    endcase
+always  /* cpu.v:243 in cpu */
+  @(_ivl_12)  // cpu.v:243
+    case (state[4:0])
+      <BRK3=5'd23, wid=5>:
+          {I} <= 1'sd-1;
+      <RTS0=5'd12, wid=5>:
+          if (rti)
+              {I} <= <select=DI[7:0]['sd2+:1] expr_type=logic>;
+      <SYNC=5'd0, wid=5>:
+          if (cli)
+              {I} <= 1'sd0;
+          else
+              if (sei)
+                  {I} <= 1'sd-1;
+              else
+                  if (plp)
+                      {I} <= <select=DI[7:0]['sd2+:1] expr_type=logic>;
+    endcase
+always  /* cpu.v:209 in cpu */
+  @(_ivl_12)  // cpu.v:209
+    case (state[4:0])
+      <RTS0=5'd12, wid=5>:
+          if (rti)
+              {V} <= <select=DI[7:0]['sd6+:1] expr_type=logic>;
+      <SYNC=5'd0, wid=5>:
+          if (bit_isn)
+              {V} <= <select=DR[7:0]['sd6+:1] expr_type=logic>;
+          else
+              if (plp)
+                  {V} <= <select=DI[7:0]['sd6+:1] expr_type=logic>;
+              else
+                  if (clv)
+                      {V} <= 1'sd0;
+                  else
+                      if (adc_sbc)
+                          {V} <= alu_V;
+    endcase
+always  /* cpu.v:193 in cpu */
+  @(_ivl_12)  // cpu.v:193
+    case (state[4:0])
+      <RTS0=5'd12, wid=5>:
+          if (rti)
+              {N} <= <select=DI[7:0]['sd7+:1] expr_type=logic>;
+      <SYNC=5'd0, wid=5>:
+          if (bit_isn)
+              {N} <= <select=DR[7:0]['sd7+:1] expr_type=logic>;
+          else
+              if ((load)|(cmp))
+                  {N} <= alu_N;
+              else
+                  if (plp)
+                      {N} <= <select=DI[7:0]['sd7+:1] expr_type=logic>;
+    endcase
+always  /* cpu.v:176 in cpu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_78)  // cpu.v:176
+    case (do_op[1:0])
+      <DO_ALU=2'd0, wid=2>:
+          {DO} = alu_out[7:0];
+      <DO_PHP=2'd3, wid=2>:
+          {DO} = (php) ? (P[7:0]) : (alu_out[7:0]);
+      <DO_PCL=2'd1, wid=2>:
+          {DO} = <select=PC[13:0]['sd0+:8] expr_type=logic>;
+      <DO_PCH=2'd2, wid=2>:
+          {DO} = <select=PC[13:0]['sd8+:8] expr_type=logic>;
+    endcase
+always  /* cpu.v:169 in cpu */
+  @(_ivl_12)  // cpu.v:169
+    if (dr_di)
+        {DR} <= DI[7:0];
+initial  /* cpu.v:9 in cpu */
+  {DIHOLD} = 9'd490;
+always  /* ab.v:110 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_18)  // ab.v:110
+    case (<select=ab_op[9:0]['sd8+:2] expr_type=logic>)
+      2'd0:
+          {ABH} = ((<select=<select=base[13:0]['sd8+:6] expr_type=logic>[(0)+:8] expr_type=logic>)+(8'd0))+(<select=abh_ci[(0)+:8] expr_type=logic>);
+      2'd1:
+          {ABH} = ((<select=<select=base[13:0]['sd8+:6] expr_type=logic>[(0)+:8] expr_type=logic>)+(8'd1))+(<select=abh_ci[(0)+:8] expr_type=logic>);
+      2'd2:
+          {ABH} = ((<select=<select=base[13:0]['sd8+:6] expr_type=logic>[(0)+:8] expr_type=logic>)+(8'd0))+(<select=abh_ci[(0)+:8] expr_type=logic>);
+      2'd3:
+          {ABH} = ((<select=<select=base[13:0]['sd8+:6] expr_type=logic>[(0)+:8] expr_type=logic>)+(8'd255))+(<select=abh_ci[(0)+:8] expr_type=logic>);
+    endcase
+always  /* ab.v:93 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_16)  // ab.v:93
+    case (<select=ab_op[9:0]['sd1+:2] expr_type=logic>)
+      2'd0:
+          {ABL, abl_co} = ((<select=<select=base[13:0]['sd0+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(9'd0))+(<select=abl_ci[(0)+:9] expr_type=logic>);
+      2'd1:
+          {ABL, abl_co} = ((<select=<select=base[13:0]['sd0+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(<select=XY[7:0][(0)+:9] expr_type=logic>))+(<select=abl_ci[(0)+:9] expr_type=logic>);
+      2'd2:
+          {ABL, abl_co} = ((<select=<select=base[13:0]['sd0+:8] expr_type=logic>[(0)+:9] expr_type=logic>)+(<select=DI[7:0][(0)+:9] expr_type=logic>))+(<select=abl_ci[(0)+:9] expr_type=logic>);
+      2'd3:
+          {ABL, abl_co} = ((<select=XY[7:0][(0)+:9] expr_type=logic>)+(<select=DI[7:0][(0)+:9] expr_type=logic>))+(<select=abl_ci[(0)+:9] expr_type=logic>);
+    endcase
+always  /* ab.v:73 in cpu.ab */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_14)  // ab.v:73
+    case (<select=ab_op[9:0]['sd3+:2] expr_type=logic>)
+      2'd0:
+          {base} = {8'd0, S[7:0]};
+      2'd1:
+          {base} = PC[13:0];
+      2'd2:
+          {base} = {DI[7:0], DR[7:0]};
+      2'd3:
+          {base} = ab_hold[13:0];
+    endcase
+always  /* ab.v:53 in cpu.ab */
+  @(_ivl_12)  // ab.v:53
+    if (RST)
+        {PC} <= 14'd16380;
+    else
+        case (<select=ab_op[9:0]['sd5+:2] expr_type=logic>)
+          2'd1:
+              {PC} <= (<select=AB[13:0][(0)+:16] expr_type=logic>)+(16'd1);
+          2'd2:
+              {PC} <= 14'd16378;
+          2'd3:
+              {PC} <= 14'd16382;
+        endcase
+always  /* ab.v:46 in cpu.ab */
+  @(_ivl_12)  // ab.v:46
+    if (<select=ab_op[9:0]['sd7+:1] expr_type=logic>)
+        {ab_hold} = AB[13:0];
+always  /* alu.v:33 in cpu.alu */
+  (* _ivl_schedule_push = 'sd1 *)
+  @(_ivl_18)  // alu.v:33
+    begin
+        casez (<select=alu_op[8:0]['sd4+:3] expr_type=logic>)
+          3'b0z0:
+              {alu_ai} = R[7:0];
+          3'b0z1:
+              {alu_ai} = DR[7:0];
+          3'd4:
+              {alu_ai} = (R[7:0])|(DR[7:0]);
+          3'd5:
+              {alu_ai} = (R[7:0])&(DR[7:0]);
+          3'd6:
+              {alu_ai} = (R[7:0])^(DR[7:0]);
+          3'd7:
+              {alu_ai} = S[7:0];
+        endcase
+        casez (<select=alu_op[8:0]['sd2+:2] expr_type=logic>)
+          2'd0:
+              {alu_bi} = 8'sd0;
+          2'd1:
+              {alu_bi} = DR[7:0];
+          2'd2:
+              {alu_bi} = 8'sd-1;
+          2'd3:
+              {alu_bi} = ~(DR[7:0]);
+        endcase
+        casez (<select=alu_op[8:0]['sd0+:2] expr_type=logic>)
+          2'd0:
+              {alu_ci} = 1'sd0;
+          2'd1:
+              {alu_ci} = 1'sd-1;
+          2'd2:
+              {alu_ci} = C;
+          2'd3:
+              {alu_ci} = 1'sd0;
+        endcase
+        {alu_out, alu_C} = ((<select=alu_ai[7:0][(0)+:9] expr_type=logic>)+(<select=alu_bi[7:0][(0)+:9] expr_type=logic>))+(<select=alu_ci[(0)+:9] expr_type=logic>);
+        {alu_si} = (C)&(<select=alu_op[8:0]['sd0+:1] expr_type=logic>);
+        if (shift)
+            if (right)
+                {alu_C, alu_out} = {alu_si, alu_out[7:0]};
+            else
+                {alu_out, alu_C} = {alu_out[7:0], alu_si};
+        else
+            if (right)
+                {alu_out} = DI[7:0];
+    end
+always  /* regfile.v:66 in cpu.regfile */
+  @(_ivl_12)  // regfile.v:66
+    if (txs)
+        {S} <= src[7:0];
+    else
+        if (push)
+            {S} <= (S[7:0])-(8'd1);
+        else
+            if (pull)
+                {S} <= (S[7:0])+(8'd1);
+always  /* regfile.v:58 in cpu.regfile */
+  @(_ivl_12)  // regfile.v:58
+    if (reg_we)
+        {regs[word=<select=reg_dst[1:0][(0)+:4] expr_type=logic>]} <= dst[7:0];
+initial  /* regfile.v:34 in cpu.regfile */
+  begin
+      {regs[word='sd0]} = 8'sd0;
+      {regs[word='sd1]} = 8'sd1;
+      {regs[word='sd2]} = 8'sd2;
+      {regs[word='sd3]} = 8'd65;
+      {S} = 8'd255;
+  end
